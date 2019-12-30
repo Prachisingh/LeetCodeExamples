@@ -11,7 +11,7 @@ public class RemoveDuplicate {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 1, 1, 3};
         RemoveDuplicate removeDuplicate = new RemoveDuplicate();
-        System.out.println("Length of modified array is  " + removeDuplicate.removeDuplicates(arr));
+        System.out.println("Length of modified stack is  " + removeDuplicate.removeDuplicates(arr));
 
     }
 
