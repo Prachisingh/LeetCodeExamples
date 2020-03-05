@@ -1,8 +1,5 @@
 package com.prachi;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 /**
  * @author prachi
  */
@@ -16,21 +13,12 @@ public class RemoveDuplicate {
     }
 
     public int removeDuplicates(int[] nums) {
-
-        int length = 1;
-        int count =0;
-        for (int i = 0; i < nums.length; i++) {
-
-
-            for (int j = i + 1; j < nums.length; j++) {
-
-                if (nums[i] == nums[j]) {
-                  count++;
-                }
+        int index = 1;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] != nums[i + 1]) {
+                nums[index++] = nums[i + 1];
             }
-
         }
-        System.out.println(Arrays.toString(nums));
-        return length;
+        return index;
     }
 }
